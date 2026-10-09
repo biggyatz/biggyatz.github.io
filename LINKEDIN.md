@@ -35,6 +35,8 @@ At Laxmi Sunrise Capital I automated daily risk reporting, built a sector gradin
 
 I also teach. Through ACCA Nepal I've trained 200+ finance professionals to use AI and Python on top of the systems they already have.
 
+At TaskNTrade I also built our company website, taskntrade.com, a creator-led UGC marketing platform.
+
 Some things you can try right now, free and in your browser:
 🏠 Nepal Property Price Estimator: 1,900+ real listings, 111 localities
 🚗 Nepal Used Car Value Estimator: 68 models, ±7.7% typical error
@@ -56,17 +58,24 @@ Add in this order; LinkedIn pulls the preview image from each page.
 
 | # | Link | Title | Description |
 |---|---|---|---|
-| 1 | https://biggyatz.github.io/ | All my projects in one place | Live AI demos, code, case studies and research, with links to try each one. |
-| 2 | https://biggyatz.github.io/nepal-property-price-estimator/ | Nepal Property Price Estimator | What is a house or plot of land worth? Built on 1,900+ real listings across 111 localities. Works in ropani-aana and bigha-kattha-dhur. |
-| 3 | https://biggyatz.github.io/nepal-used-car-value-estimator/web/ | Nepal Used Car Value Estimator | Value a used car from real listings, compare with today's showroom price, see depreciation. 68 models, ±7.7% typical error. |
-| 4 | https://biggyatz.github.io/MediQNet-VQA-system/ | MediQNet: Medical Visual Q&A | Ask a radiology image about modality, plane, organ or abnormality. 60.2% on the VQA-Med 2019 test set; runs on your device. |
-| 5 | https://www.linkedin.com/posts/biggyat-kumar-pandey_acca-accanepal-collaboration-activity-7483201707242573826-hLtd | AI for Finance: ACCA Nepal sessions | (keep the existing post) |
+| 1 | https://taskntrade.com/ | TaskNTrade website | The website I built for my current organisation: a creator-led UGC marketing platform. |
+| 2 | https://biggyatz.github.io/ | All my projects in one place | Live AI demos, code, case studies and research, with links to try each one. |
+| 3 | https://biggyatz.github.io/nepal-property-price-estimator/ | Nepal Property Price Estimator | What is a house or plot of land worth? Built on 1,900+ real listings across 111 localities. Works in ropani-aana and bigha-kattha-dhur. |
+| 4 | https://biggyatz.github.io/nepal-used-car-value-estimator/web/ | Nepal Used Car Value Estimator | Value a used car from real listings, compare with today's showroom price, see depreciation. 68 models, ±7.7% typical error. |
+| 5 | https://biggyatz.github.io/MediQNet-VQA-system/ | MediQNet: Medical Visual Q&A | Ask a radiology image about modality, plane, organ or abnormality. 60.2% on the VQA-Med 2019 test set; runs on your device. |
+| 6 | https://www.linkedin.com/posts/biggyat-kumar-pandey_acca-accanepal-collaboration-activity-7483201707242573826-hLtd | AI for Finance: ACCA Nepal sessions | (keep the existing post) |
 
 ---
 
 ## 5. Projects section (Profile → Add section → Recommended → Add projects)
 
 For each: **Name**, **Description**, **Skills**, **Project URL** (via *Add media → Add a link*), associated with the listed experience if relevant.
+
+### TaskNTrade website (taskntrade.com)
+- **URL:** https://taskntrade.com/
+- **Associated with:** TaskNTrade (current role)
+- **Description:** I developed the website for Task n Trade, a creator-led UGC marketing platform in Lalitpur that matches brands with creators on delivered performance. It has separate journeys for brands and creators, a campaign explorer, services, market insights and a two-minute creator application.
+- **Skills:** Web Development · UI/UX · Front-end Development
 
 ### Nepal Property Price Estimator
 - **Dates:** Oct 2026

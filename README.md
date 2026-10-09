@@ -2,7 +2,7 @@
 
 **Live:** <https://biggyatz.github.io/>
 
-A single link-in-bio page for every project by Biggyat Kumar Pandey: live AI demos (with screenshots), source code, professional case studies, teaching and research. Static HTML, no build step, free on GitHub Pages.
+A single link-in-bio page with every live project by Biggyat Kumar Pandey: TaskNTrade, the AI demos and the web apps, each with a screenshot and links to try it and read the code. Static HTML, no build step, free on GitHub Pages. Experience, case studies and teaching live on the [portfolio](https://portfolio.bigyatz123.workers.dev/).
 
 | File | What it is |
 | --- | --- |
@@ -11,4 +11,4 @@ A single link-in-bio page for every project by Biggyat Kumar Pandey: live AI dem
 | `farmkart/` | Static live version of Farmkart, a VIT team e-commerce project (original PHP/MySQL code: [adwyaitpawar/Farmkart](https://github.com/adwyaitpawar/Farmkart)) |
 | `LINKEDIN.md` | Copy-paste text for the LinkedIn headline, About, Featured links, Projects and a launch post |
 
-To add a project, copy one `<article class="project">` block in `index.html`, add a 720×456 screenshot to `img/`, and push to `main`. GitHub Pages republishes automatically.
+To add a project, copy one `<article class="card">` block in `index.html`, add a 720×456 screenshot to `img/`, and push to `main`. GitHub Pages republishes automatically.
