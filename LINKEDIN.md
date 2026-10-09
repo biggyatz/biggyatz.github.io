@@ -31,11 +31,11 @@ Optional: Profile → *Add profile section* → *Custom button* → **Visit webs
 
 I build data and AI systems that replace slow, manual work in finance with pipelines a team can trust and audit.
 
-At Laxmi Sunrise Capital I automated daily risk reporting, built a sector grading model that compares companies across nine sectors, and gave the research and portfolio teams a shared fund dashboard. At ShareSanskar I automated equity research that used to take hundreds of hours of manual data extraction. I now work on data and automation at TaskNTrade.
+At Laxmi Sunrise Capital I automated daily risk reporting, built a sector grading model that compares companies across nine sectors, and gave the research and portfolio teams a shared fund dashboard. At ShareSanskar I automated equity research that used to take hundreds of hours of manual data extraction. I now lead research and development at TaskNTrade, building analytics and secure, intelligent systems with AI.
 
 I also teach. Through ACCA Nepal I've trained 200+ finance professionals to use AI and Python on top of the systems they already have.
 
-At TaskNTrade I also built our company website, taskntrade.com, a creator-led UGC marketing platform.
+I also built our company website, taskntrade.com, for its creator-led UGC marketing platform.
 
 Some things you can try right now, free and in your browser:
 🏠 Nepal Property Price Estimator: 1,900+ real listings, 111 localities
@@ -73,7 +73,7 @@ For each: **Name**, **Description**, **Skills**, **Project URL** (via *Add media
 
 ### TaskNTrade website (taskntrade.com)
 - **URL:** https://taskntrade.com/
-- **Associated with:** TaskNTrade (current role)
+- **Associated with:** TaskNTrade (Head of Research and Development)
 - **Description:** I developed the website for Task n Trade, a creator-led UGC marketing platform in Lalitpur that matches brands with creators on delivered performance. It has separate journeys for brands and creators, a campaign explorer, services, market insights and a two-minute creator application.
 - **Skills:** Web Development · UI/UX · Front-end Development
 
@@ -110,6 +110,14 @@ For each: **Name**, **Description**, **Skills**, **Project URL** (via *Add media
 - **URL:** https://biggyatz.github.io/farmkart/
 - **Description:** A full-stack e-commerce site for farming essentials: seeds, flowering and fruit plants, tools and pest control, with guidance on what to sow each season. Built in PHP and MySQL; the live version is a static rebuild of the 117-product catalogue with search, filters, a cart and a simulated checkout.
 - **Skills:** PHP · MySQL · JavaScript · Web Development
+
+---
+
+## 5b. Experience → TaskNTrade (edit the current position)
+
+- **Title:** Head of Research and Development
+- **Company:** TaskNTrade Private Limited
+- **Description:** Leading research and development in analytics and secure, intelligent systems built with AI. Developed the company website, taskntrade.com, for its creator-led UGC marketing platform.
 
 ---
 
