@@ -50,6 +50,8 @@
   .links { display: flex; gap: 8px; flex-wrap: wrap; }
   .icon { width: 44px; height: 44px; border-radius: 12px; display: grid; place-items: center; background: var(--card); border: 1px solid var(--border); color: var(--text-2); text-decoration: none; font-size: 1.05rem; cursor: pointer; font-family: inherit; transition: border-color .15s, color .15s; }
   .icon:hover, .icon:focus-visible { border-color: var(--accent); color: var(--accent-text); }
+  .profile-btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 44px; padding: 0 16px; border-radius: 12px; background: var(--accent); color: #1B2131; font-weight: 600; font-size: .9rem; text-decoration: none; white-space: nowrap; }
+  .profile-btn:hover, .profile-btn:focus-visible { filter: brightness(1.06); }
 
   .intro { margin: 22px 0 18px; color: var(--text-2); font-size: .95rem; }
   .intro strong { color: var(--text); }
@@ -107,6 +109,7 @@
     header { gap: 12px; }
     .links { width: 100%; }
     .links .icon { flex: 1; }
+    .profile-btn { flex: 1 1 100%; }
   }
 </style>
 </head>
@@ -119,6 +122,7 @@
       <p class="role">AI Solutions Architect · FinTech Researcher · Kathmandu</p>
     </div>
     <nav class="links" aria-label="Contact">
+      <a class="profile-btn" href="https://portfolio.bigyatz123.workers.dev/" target="_blank" rel="noopener noreferrer"><i class="fas fa-user" aria-hidden="true"></i> Profile &amp; portfolio</a>
       <a class="icon" href="https://www.linkedin.com/in/biggyat-kumar-pandey" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
       <a class="icon" href="https://github.com/biggyatz" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
       <a class="icon" href="mailto:bigyatz123@gmail.com" aria-label="Email" title="Email"><i class="fas fa-envelope" aria-hidden="true"></i></a>
