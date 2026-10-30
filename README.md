@@ -2,7 +2,7 @@
 
 **Live:** <https://biggyatz.github.io/>
 
-A single link-in-bio page with every live project by Biggyat Kumar Pandey: TaskNTrade, the AI demos and the web apps, each with a screenshot and links to try it and read the code. Static HTML, no build step, free on GitHub Pages. Experience, case studies and teaching live on the [portfolio](https://portfolio.bigyatz123.workers.dev/).
+A single link-in-bio page with every live project by Biggyat Kumar Pandey: TaskNTrade, the AI demos and the web apps, each with a screenshot and links to try it and read the code. Static HTML, no build step, free on GitHub Pages. Experience, case studies and teaching live on the [portfolio](https://biggyatkumarpandey.com.np/).
 
 | File | What it is |
 | --- | --- |

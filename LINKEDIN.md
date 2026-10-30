@@ -4,7 +4,7 @@ Copy-paste text for updating the LinkedIn profile so it points to the project hu
 Every number here matches the live projects and their READMEs (October 2026).
 
 **Hub link:** https://biggyatz.github.io/  
-**Portfolio:** https://portfolio.bigyatz123.workers.dev/
+**Portfolio:** https://biggyatkumarpandey.com.np/
 
 ---
 
@@ -20,7 +20,7 @@ Every number here matches the live projects and their READMEs (October 2026).
 
 | URL | Type |
 | --- | --- |
-| `https://portfolio.bigyatz123.workers.dev/` | Portfolio |
+| `https://biggyatkumarpandey.com.np/` | Portfolio |
 | `https://biggyatz.github.io/` | Other, labelled **Live projects** |
 
 Optional: Profile → *Add profile section* → *Custom button* → **Visit website** → `https://biggyatz.github.io/`
@@ -46,7 +46,7 @@ Some things you can try right now, free and in your browser:
 🌱 Farmkart: an online store for farmers (VIT team project)
 
 Everything is in one place: https://biggyatz.github.io/
-Full portfolio and case studies: https://portfolio.bigyatz123.workers.dev/
+Full portfolio and case studies: https://biggyatkumarpandey.com.np/
 
 Open to research, consulting and AI training work. WhatsApp is the fastest way to reach me.
 
