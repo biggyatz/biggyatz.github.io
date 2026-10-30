@@ -1,6 +1,6 @@
-# biggyatz.github.io: project hub
+# blog.biggyatkumarpandey.com.np: project hub
 
-**Live:** <https://biggyatz.github.io/>
+**Live:** <https://blog.biggyatkumarpandey.com.np/>
 
 A single link-in-bio page with every live project by Biggyat Kumar Pandey: TaskNTrade, the AI demos and the web apps, each with a screenshot and links to try it and read the code. Static HTML, no build step, free on GitHub Pages. Experience, case studies and teaching live on the [portfolio](https://biggyatkumarpandey.com.np/).
 
