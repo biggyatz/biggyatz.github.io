@@ -80,3 +80,17 @@ footer a { color: var(--accent-text); }
 figure { margin: 18px 0 22px; }
 figure img { display: block; width: 100%; height: auto; border-radius: 12px; border: 1px solid var(--border); }
 figcaption { font-size: .86rem; color: var(--muted); margin-top: 8px; }
+.request { background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 20px 22px; margin: 32px 0; }
+.request h2 { margin-top: 0; }
+.request .incl { margin: 0 0 18px; padding-left: 20px; color: var(--text-2); }
+.req-form label { display: flex; flex-direction: column; gap: 6px; font-size: .9rem; font-weight: 600; margin-bottom: 12px; color: var(--text); }
+.req-form .opt { font-weight: 400; color: var(--muted); }
+.req-form input, .req-form select, .req-form textarea { font: inherit; font-size: 1rem; font-weight: 400; color: var(--text); background: var(--page); border: 1px solid var(--border); border-radius: 10px; padding: 10px 12px; min-height: 44px; width: 100%; }
+.req-form input:focus, .req-form select:focus, .req-form textarea:focus { outline: 2px solid var(--accent); outline-offset: 1px; border-color: var(--accent); }
+.req-form .row2 { display: grid; grid-template-columns: 1fr 1fr; gap: 0 12px; }
+.req-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 4px; }
+.btn.ghost { background: transparent; border: 1px solid var(--border); color: var(--text); }
+.btn.ghost:hover { border-color: var(--accent); filter: none; }
+button.btn { border: 0; cursor: pointer; font: inherit; font-weight: 600; }
+.form-note { font-size: .84rem; color: var(--muted); margin: 10px 0 0; }
+@media (max-width: 560px) { .req-form .row2 { grid-template-columns: 1fr; } .req-actions .btn { flex: 1 1 100%; } }
