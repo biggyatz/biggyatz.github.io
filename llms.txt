@@ -14,6 +14,7 @@
 
 ## Articles
 
+- [The 6H framework: making hydropower investments bankable](https://blog.biggyatkumarpandey.com.np/articles/6h-hydropower-investment-framework/): A due-diligence framework that adds Hazards and Hydro-Policy to hydropower's classic 4H test, applied to Nepal, Bhutan and Norway.
 - [What land in Kathmandu costs per aana: asking prices from 1,923 listings](https://blog.biggyatkumarpandey.com.np/articles/kathmandu-land-price-per-aana/): Median asking prices per aana for land and houses across 11 districts and 111 localities, and what road access and storeys add.
 - [How fast used cars lose value in Nepal](https://blog.biggyatkumarpandey.com.np/articles/used-car-depreciation-nepal/): What 422 listings compared with 2026 showroom prices say about depreciation by age and brand, and how EVs compare.
 - [What I learned training 200+ finance professionals to use AI](https://blog.biggyatkumarpandey.com.np/articles/ai-for-finance-teams-nepal/): A practical approach for finance teams: automate around legacy systems, keep numbers traceable, keep humans signing off.
