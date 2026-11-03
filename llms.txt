@@ -1,0 +1,17 @@
+# Live AI projects by Biggyat Kumar Pandey
+
+> Free projects by Biggyat Kumar Pandey, an AI Solutions Architect and FinTech researcher in Kathmandu, Nepal. Each one runs in the browser with no sign-up; the AI models run on the visitor's device. Profile and experience: https://biggyatkumarpandey.com.np/
+
+## Projects
+
+- [TaskNTrade](https://taskntrade.com/): website for a creator-led UGC marketing platform in Lalitpur, built for the author's current organisation.
+- [Nepal Property Price Estimator](https://blog.biggyatkumarpandey.com.np/nepal-property-price-estimator/): estimates the asking price of a house or land in Nepal from 1,900+ real listings across 111 localities; works in ropani-aana-paisa-dam and bigha-kattha-dhur.
+- [Nepal Used Car Value Estimator](https://blog.biggyatkumarpandey.com.np/nepal-used-car-value-estimator/web/): values a used car from real Hamrobazar listings across 68 models (7.7% median error), compares it with showroom prices and shows depreciation.
+- [MediQNet](https://blog.biggyatkumarpandey.com.np/MediQNet-VQA-system/): answers questions about radiology images (modality, plane, organ, abnormality); 60.2% on the ImageCLEF VQA-Med 2019 test set.
+- [Premier League 2020/21 in Numbers](https://blog.biggyatkumarpandey.com.np/EPL-2020-2021-analysis/): interactive dashboard of 488 players with 13 leaderboards.
+- [Student Performance Insights](https://blog.biggyatkumarpandey.com.np/student-performance-insights/): explainable maths-score prediction (R² 0.88 on unseen students).
+- [Farmkart](https://blog.biggyatkumarpandey.com.np/farmkart/): online store for farmers with a seasonal sowing guide (VIT team project).
+
+## Source code
+
+https://github.com/biggyatz
