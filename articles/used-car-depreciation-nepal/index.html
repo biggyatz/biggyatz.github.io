@@ -187,7 +187,7 @@
   (function () {
     const f = document.querySelector(".req-form"); if (!f) return;
     const shown = Date.now(), status = f.querySelector(".req-status"), btn = f.querySelector(".req-btn");
-    const fallback = (d) => "mailto:bigyatz123@gmail.com?subject=" + encodeURIComponent("Full report request: " + f.dataset.title) + "&body=" + encodeURIComponent("Name: " + d.name + "\nEmail: " + d.email + "\nOrganisation: " + (d.org || "-") + "\nPurpose: " + d.purpose + "\n\n" + (d.message || ""));
+    const fallback = (d) => "mailto:hello@biggyatkumarpandey.com.np?subject=" + encodeURIComponent("Full report request: " + f.dataset.title) + "&body=" + encodeURIComponent("Name: " + d.name + "\nEmail: " + d.email + "\nOrganisation: " + (d.org || "-") + "\nPurpose: " + d.purpose + "\n\n" + (d.message || ""));
     f.addEventListener("submit", async (e) => {
       e.preventDefault();
       const d = Object.fromEntries(new FormData(f));
