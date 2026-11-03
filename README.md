@@ -12,3 +12,7 @@ A single link-in-bio page with every live project by Biggyat Kumar Pandey: TaskN
 | `LINKEDIN.md` | Copy-paste text for the LinkedIn headline, About, Featured links, Projects and a launch post |
 
 To add a project, copy one `<article class="card">` block in `index.html`, add a 720×456 screenshot to `img/`, and push to `main`. GitHub Pages republishes automatically.
+
+## Licence
+
+Copyright © 2026 Biggyat Kumar Pandey. All rights reserved. The code is public for viewing only; see [LICENSE](LICENSE). For permission to use it, email bigyatz123@gmail.com.
