@@ -140,25 +140,30 @@
     <p class="note">For academic and research purposes only. Not investment advice.</p>
 
     <section class="request" id="request" aria-labelledby="request-title">
-      <h2 id="request-title">Request the full report</h2>
-      <p>The full research is shared on request with investors, developers, researchers and institutions. Tell me a little about yourself and how you'll use it, and I'll send it by email.</p>
-      <ul class="incl"><li>The complete 6H blueprint (14 slides)</li><li>Nepal, Bhutan and Norway compared across all six filters</li><li>Where projects succeed or fail across their lifecycle</li><li>An investor due-diligence playbook</li></ul>
+      <p class="req-kicker">Full report · free on request</p>
+      <h2 id="request-title">Get the complete research</h2>
+      <p class="req-sub">The full research is shared on request with investors, developers, researchers and institutions. Tell me a little about yourself and how you'll use it, and I'll send it by email.</p>
+      <ul class="req-incl"><li>The complete 6H blueprint (14 slides)</li><li>Nepal, Bhutan and Norway compared across all six filters</li><li>Where projects succeed or fail across their lifecycle</li><li>An investor due-diligence playbook</li></ul>
       <form class="req-form" data-title="The 6H Hydropower Investment Framework" novalidate>
-        <div class="row2">
-          <label><span>Your name</span><input name="name" autocomplete="name" required></label>
-          <label><span>Your email</span><input name="email" type="email" autocomplete="email" required></label>
+        <div class="req-row">
+          <input name="name" autocomplete="name" placeholder="Your name" aria-label="Your name" required>
+          <input name="email" type="email" autocomplete="email" placeholder="Email address" aria-label="Email address" required>
         </div>
-        <div class="row2">
-          <label><span>Organisation <span class="opt">(optional)</span></span><input name="org" autocomplete="organization"></label>
-          <label><span>Purpose</span><select name="purpose"><option>Research or study</option><option>Investment or business decision</option><option>Consulting or freelance work</option><option>Media or publication</option><option>Other</option></select></label>
-        </div>
-        <label><span>Anything else? <span class="opt">(optional)</span></span><textarea name="msg" rows="3"></textarea></label>
-        <div class="req-actions">
-          <button class="btn" type="submit">Request by email</button>
-          <a class="btn ghost" href="https://wa.me/9779818074225?text=Hi%20Biggyat%2C%20I%27d%20like%20to%20request%20the%20full%20report%3A%20The%206H%20Hydropower%20Investment%20Framework.">Request on WhatsApp</a>
-        </div>
-        <p class="form-note" aria-live="polite">Opens your email app with the request filled in. Nothing is stored on this website.</p>
+        <div class="req-purpose" role="radiogroup" aria-label="What is it for?"><span class="req-q">What's it for?</span><label class="pill"><input type="radio" name="purpose" value="Research" checked><span>Research</span></label><label class="pill"><input type="radio" name="purpose" value="Investment"><span>Investment</span></label><label class="pill"><input type="radio" name="purpose" value="Consulting"><span>Consulting work</span></label><label class="pill"><input type="radio" name="purpose" value="Media"><span>Media</span></label><label class="pill"><input type="radio" name="purpose" value="Other"><span>Other</span></label></div>
+        <details class="req-more"><summary>Add organisation or a note <span>(optional)</span></summary>
+          <input name="org" autocomplete="organization" placeholder="Organisation" aria-label="Organisation">
+          <textarea name="message" rows="3" placeholder="Anything I should know?" aria-label="Note"></textarea>
+        </details>
+        <input class="req-hp" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <button class="req-btn" type="submit">Send request</button>
+        <p class="req-status" role="status" aria-live="polite"></p>
+        <p class="req-alt">Prefer WhatsApp? <a href="https://wa.me/9779818074225?text=Hi%20Biggyat%2C%20I%27d%20like%20to%20request%20the%20full%20report%3A%20The%206H%20Hydropower%20Investment%20Framework.">Message me</a></p>
       </form>
+      <div class="req-done" hidden>
+        <div class="req-check" aria-hidden="true">✓</div>
+        <h3>Request sent</h3>
+        <p>Thanks, <span class="req-name"></span>. I'll email the report to <strong class="req-mail"></strong>, usually within one or two working days.</p>
+      </div>
     </section>
 
     
@@ -180,15 +185,27 @@
 <script>
   (function () {
     const f = document.querySelector(".req-form"); if (!f) return;
-    f.addEventListener("submit", (e) => {
+    const shown = Date.now(), status = f.querySelector(".req-status"), btn = f.querySelector(".req-btn");
+    const fallback = (d) => "mailto:bigyatz123@gmail.com?subject=" + encodeURIComponent("Full report request: " + f.dataset.title) + "&body=" + encodeURIComponent("Name: " + d.name + "\nEmail: " + d.email + "\nOrganisation: " + (d.org || "-") + "\nPurpose: " + d.purpose + "\n\n" + (d.message || ""));
+    f.addEventListener("submit", async (e) => {
       e.preventDefault();
       const d = Object.fromEntries(new FormData(f));
-      const note = f.querySelector(".form-note");
-      if (!d.name.trim() || !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(d.email.trim())) { note.textContent = "Please add your name and a valid email address."; return; }
-      const subject = "Full report request: " + f.dataset.title;
-      const body = ["Hi Biggyat,", "", "I'd like to request the full report: " + f.dataset.title + ".", "", "Name: " + d.name, "Email: " + d.email, "Organisation: " + (d.org || "-"), "Purpose: " + d.purpose, "", d.msg || "", "", "Sent from " + location.href].join("\n");
-      location.href = "mailto:bigyatz123@gmail.com?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
-      note.innerHTML = "If your email app didn't open, email <a href=\"mailto:bigyatz123@gmail.com\">bigyatz123@gmail.com</a> with the report name.";
+      if (!d.name.trim() || !/^[^@\s]+@[^@\s]+\.[^@\s]{2,}$/.test(d.email.trim())) { status.textContent = "Please add your name and a valid email address."; status.className = "req-status err"; return; }
+      btn.disabled = true; btn.textContent = "Sending…"; status.textContent = ""; status.className = "req-status";
+      try {
+        const r = await fetch("https://biggyatkumarpandey.com.np/api/request", { method: "POST", headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ ...d, report: f.dataset.title, page: location.href, elapsed: Date.now() - shown }) });
+        const out = await r.json().catch(() => ({}));
+        if (!r.ok || !out.ok) throw new Error(out.error || "failed");
+        const done = f.parentElement.querySelector(".req-done");
+        done.querySelector(".req-name").textContent = d.name.trim().split(" ")[0];
+        done.querySelector(".req-mail").textContent = d.email.trim();
+        f.hidden = true; done.hidden = false; done.focus && done.setAttribute("tabindex", "-1"); done.focus();
+      } catch (err) {
+        btn.disabled = false; btn.textContent = "Send request";
+        status.className = "req-status err";
+        status.innerHTML = "Couldn't send right now. <a href=\"" + fallback(d) + "\">Email me instead</a>.";
+      }
     });
   })();
   (function () {

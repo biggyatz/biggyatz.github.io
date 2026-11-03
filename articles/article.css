@@ -80,17 +80,51 @@ footer a { color: var(--accent-text); }
 figure { margin: 18px 0 22px; }
 figure img { display: block; width: 100%; height: auto; border-radius: 12px; border: 1px solid var(--border); }
 figcaption { font-size: .86rem; color: var(--muted); margin-top: 8px; }
-.request { background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 20px 22px; margin: 32px 0; }
-.request h2 { margin-top: 0; }
-.request .incl { margin: 0 0 18px; padding-left: 20px; color: var(--text-2); }
-.req-form label { display: flex; flex-direction: column; gap: 6px; font-size: .9rem; font-weight: 600; margin-bottom: 12px; color: var(--text); }
-.req-form .opt { font-weight: 400; color: var(--muted); }
-.req-form input, .req-form select, .req-form textarea { font: inherit; font-size: 1rem; font-weight: 400; color: var(--text); background: var(--page); border: 1px solid var(--border); border-radius: 10px; padding: 10px 12px; min-height: 44px; width: 100%; }
-.req-form input:focus, .req-form select:focus, .req-form textarea:focus { outline: 2px solid var(--accent); outline-offset: 1px; border-color: var(--accent); }
-.req-form .row2 { display: grid; grid-template-columns: 1fr 1fr; gap: 0 12px; }
-.req-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 4px; }
-.btn.ghost { background: transparent; border: 1px solid var(--border); color: var(--text); }
-.btn.ghost:hover { border-color: var(--accent); filter: none; }
-button.btn { border: 0; cursor: pointer; font: inherit; font-weight: 600; }
-.form-note { font-size: .84rem; color: var(--muted); margin: 10px 0 0; }
-@media (max-width: 560px) { .req-form .row2 { grid-template-columns: 1fr; } .req-actions .btn { flex: 1 1 100%; } }
+/* Report request card */
+.request { --rq-bg: #0F1626; --rq-text: #F2EEE3; --rq-muted: #A6AEC1; --rq-line: rgba(242,238,227,.16); --rq-field: rgba(242,238,227,.06);
+  background: var(--rq-bg); color: var(--rq-text); border-radius: 18px; padding: clamp(20px, 4vw, 30px); margin: 36px 0; position: relative; overflow: hidden; }
+.request::before { content: ""; position: absolute; inset: 0 0 auto auto; width: 220px; height: 220px; background: radial-gradient(circle, rgba(211,164,92,.18), transparent 70%); pointer-events: none; }
+:root[data-theme="dark"] .request { --rq-bg: #1A2232; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .request { --rq-bg: #1A2232; } }
+.req-kicker { font-size: .74rem; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: #D3A45C; margin: 0 0 6px; }
+.request h2 { color: var(--rq-text); margin: 0 0 8px; font-size: 1.5rem; }
+.req-sub { color: var(--rq-muted); margin: 0 0 14px; font-size: .97rem; }
+.req-incl { list-style: none; padding: 0; margin: 0 0 20px; display: grid; gap: 6px; font-size: .93rem; }
+.req-incl li { position: relative; padding-left: 24px; color: var(--rq-text); }
+.req-incl li::before { content: ""; position: absolute; left: 2px; top: .55em; width: 11px; height: 6px; border-left: 2px solid #D3A45C; border-bottom: 2px solid #D3A45C; transform: rotate(-45deg); }
+.req-form { display: grid; gap: 12px; }
+.req-form[hidden], .req-done[hidden] { display: none; }
+.req-row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.req-form input:not([type=radio]), .req-form textarea { font: inherit; font-size: 1rem; color: var(--rq-text); background: var(--rq-field); border: 1px solid var(--rq-line); border-radius: 12px; padding: 12px 14px; min-height: 48px; width: 100%; transition: border-color .15s, background .15s; }
+.req-form input::placeholder, .req-form textarea::placeholder { color: #8A93A8; }
+.req-form input:focus, .req-form textarea:focus { outline: none; border-color: #D3A45C; background: rgba(242,238,227,.09); }
+.req-purpose { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+.req-q { font-size: .88rem; color: var(--rq-muted); margin-right: 4px; }
+.pill { cursor: pointer; }
+.pill input { position: absolute; opacity: 0; pointer-events: none; }
+.pill span { display: inline-flex; align-items: center; min-height: 36px; padding: 0 14px; border-radius: 999px; border: 1px solid var(--rq-line); font-size: .88rem; color: var(--rq-text); transition: all .15s; }
+.pill:hover span { border-color: rgba(211,164,92,.6); }
+.pill input:checked + span { background: #D3A45C; border-color: #D3A45C; color: #0F1626; font-weight: 600; }
+.pill input:focus-visible + span { outline: 2px solid #D3A45C; outline-offset: 2px; }
+.req-more summary { cursor: pointer; font-size: .9rem; color: var(--rq-muted); list-style: none; display: inline-flex; gap: 6px; align-items: center; }
+.req-more summary::-webkit-details-marker { display: none; }
+.req-more summary::before { content: "+"; display: inline-grid; place-items: center; width: 18px; height: 18px; border-radius: 50%; border: 1px solid var(--rq-line); font-size: .8rem; }
+.req-more[open] summary::before { content: "–"; }
+.req-more summary span { opacity: .75; }
+.req-more[open] { display: grid; gap: 10px; }
+.req-hp { position: absolute !important; left: -9999px; width: 1px; height: 1px; opacity: 0; }
+.req-btn { justify-self: start; min-height: 48px; padding: 0 26px; border: 0; border-radius: 12px; background: #D3A45C; color: #0F1626; font: inherit; font-weight: 700; font-size: 1rem; cursor: pointer; transition: filter .15s, transform .15s; }
+.req-btn:hover { filter: brightness(1.07); }
+.req-btn:active { transform: translateY(1px); }
+.req-btn:disabled { opacity: .7; cursor: progress; }
+.req-status { margin: 0; font-size: .88rem; min-height: 1px; }
+.req-status.err { color: #F2B8A0; }
+.req-status a, .req-alt a { color: #D3A45C; }
+.req-alt { margin: 0; font-size: .86rem; color: var(--rq-muted); }
+.req-done { text-align: left; padding: 6px 0 2px; }
+.req-done:focus { outline: none; }
+.req-check { width: 44px; height: 44px; border-radius: 50%; background: #D3A45C; color: #0F1626; display: grid; place-items: center; font-weight: 800; font-size: 1.3rem; margin-bottom: 12px; }
+.req-done h3 { color: var(--rq-text); font-family: Fraunces, Georgia, serif; font-size: 1.3rem; margin: 0 0 6px; }
+.req-done p { color: var(--rq-muted); margin: 0; }
+.req-done strong { color: var(--rq-text); }
+@media (max-width: 560px) { .req-row { grid-template-columns: 1fr; } .req-btn { justify-self: stretch; } }
