@@ -131,6 +131,15 @@
     .card.featured .btn { flex: 0 1 auto; padding: 0 20px; }
   }
 
+  .articles { margin-top: 32px; }
+  .sec-title { font-family: Fraunces, Georgia, serif; font-weight: 600; font-size: 1.3rem; margin: 0 0 12px; }
+  .art-list { display: grid; gap: 12px; grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); }
+  .art { display: flex; flex-direction: column; gap: 4px; padding: 14px 16px; background: var(--card); border: 1px solid var(--border); border-radius: 14px; text-decoration: none; transition: border-color .15s; }
+  .art:hover, .art:focus-visible { border-color: var(--accent); }
+  .art-k { font-size: .74rem; font-weight: 600; letter-spacing: .02em; text-transform: uppercase; color: var(--muted); }
+  .art-t { font-weight: 600; line-height: 1.35; }
+  .art-all { margin: 12px 0 0; font-size: .9rem; }
+  .art-all a { color: var(--accent-text); }
   footer { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 16px; margin-top: 28px; color: var(--muted); font-size: .85rem; }
   footer a { color: var(--accent-text); }
   :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
@@ -256,6 +265,16 @@
       </div>
     </article>
   </main>
+
+  <section class="articles" aria-labelledby="articles-title">
+    <h2 id="articles-title" class="sec-title">Articles</h2>
+    <div class="art-list">
+      <a class="art" href="articles/kathmandu-land-price-per-aana/"><span class="art-k">Real estate · 7 min</span><span class="art-t">What land in Kathmandu costs per aana: asking prices from 1,923 listings</span></a>
+      <a class="art" href="articles/used-car-depreciation-nepal/"><span class="art-k">Automobiles · 6 min</span><span class="art-t">How fast used cars lose value in Nepal</span></a>
+      <a class="art" href="articles/ai-for-finance-teams-nepal/"><span class="art-k">AI for finance · 6 min</span><span class="art-t">What I learned training 200+ finance professionals to use AI</span></a>
+    </div>
+    <p class="art-all"><a href="articles/">All articles →</a></p>
+  </section>
 
   <footer>
     <span>© 2026 Biggyat Kumar Pandey. All rights reserved.</span>
