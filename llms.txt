@@ -2,6 +2,13 @@
 
 > Free projects by Biggyat Kumar Pandey, an AI Solutions Architect and FinTech researcher in Kathmandu, Nepal. Each one runs in the browser with no sign-up; the AI models run on the visitor's device. Profile and experience: https://biggyatkumarpandey.com.np/
 
+## Services (available for freelance projects, Nepal and remote)
+
+- AI automation for finance teams: automated reports, bank and ledger reconciliations, extracting data from PDFs and invoices, Excel-to-Python pipelines, built around existing accounting systems.
+- Dashboards and data apps: management dashboards, pricing and valuation tools, explainable ML models.
+- AI training workshops: hands-on AI and Python training for finance and accounting teams (200+ professionals trained with ACCA Nepal), in Kathmandu or online.
+- Every project is quoted after a free assessment. Enquire: https://blog.biggyatkumarpandey.com.np/#work-with-me or hello@biggyatkumarpandey.com.np
+
 ## Projects
 
 - [TaskNTrade](https://taskntrade.com/): website for a creator-led UGC marketing platform in Lalitpur, built for the author's current organisation.
